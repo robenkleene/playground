@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable ruby-playground': 'ruby-playground:toggle'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'ruby-playground'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'ruby-playground:toggle' }
+      ]
+    ]
+  }
+]
