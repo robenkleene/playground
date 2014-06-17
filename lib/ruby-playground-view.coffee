@@ -3,8 +3,10 @@
 module.exports =
 class RubyPlaygroundView extends View
   @content: ->
-    @div class: 'ruby-playground tool-panel panel-left', =>
-      @div "The RubyPlayground package is Alive! It's ALIVE!", class: "message"
+    @div class: 'ruby-playground tool-panel panel-right', style: "width: 265px;", =>
+      @div class: "inset-panel padded", 'Some content'
+      # @div "The RubyPlayground package is Alive! It's ALIVE!", class: "message"
+
   # @content: ->
   #   @div class: "changer tool-panel panel-bottom", =>
   #     @div class: "panel", =>
