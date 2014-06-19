@@ -22,3 +22,12 @@ class RubyPlaygroundView extends View
       @detach()
     else
       atom.workspaceView.appendToRight(this)
+      # editorView = atom.workspaceView.getActiveView()
+      # if @isValidEditorView(editorView)
+      #   # editorView.appendToRight(this)
+      #   paneView = editorView.getPane()
+      #   paneView.append(this)
+
+  isValidEditorView: (editorView) ->
+    return true
+    # editorView?.getEditor()?.getGrammar()?.scopeName is 'source.go'
