@@ -1,13 +1,13 @@
 {View} = require 'atom'
 
 module.exports =
-class RubyPlaygroundView extends View
+class PlaygroundView extends View
   @content: ->
-    @div class: 'ruby-playground tool-panel panel-right', style: "width: 265px;", =>
+    @div class: 'playground tool-panel panel-right', style: "width: 265px;", =>
       @div class: "inset-panel padded", 'Some content'
 
   initialize: (serializeState) ->
-    atom.workspaceView.command "ruby-playground:toggle", => @toggle()
+    atom.workspaceView.command "playground:toggle", => @toggle()
 
   # Returns an object that can be retrieved when package is activated
   serialize: ->
@@ -17,7 +17,7 @@ class RubyPlaygroundView extends View
     @detach()
 
   toggle: ->
-    console.log "RubyPlaygroundView was toggled!"
+    console.log "PlaygroundView was toggled!"
     if @hasParent()
       @detach()
     else

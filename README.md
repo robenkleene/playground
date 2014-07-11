@@ -1,4 +1,4 @@
-# ruby-playground package
+# playground package
 
 A short description of your package.
 

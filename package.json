@@ -1,10 +1,10 @@
 {
-  "name": "ruby-playground",
-  "main": "./lib/ruby-playground",
+  "name": "playground",
+  "main": "./lib/playground",
   "version": "0.0.0",
   "description": "A short description of your package",
-  "activationEvents": ["ruby-playground:toggle"],
-  "repository": "https://github.com/atom/ruby-playground",
+  "activationEvents": ["playground:toggle"],
+  "repository": "https://github.com/atom/playground",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
